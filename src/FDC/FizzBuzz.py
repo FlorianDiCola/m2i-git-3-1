@@ -5,12 +5,9 @@ def FizzBuzz(entry):
     if entry % 5 == 0:
         result = result+"Buzz"
     if result != "":
-        return result
+        return str(result)
     else:
-        return entry
+        return str(entry)
 
-output = ""
 for i in range(1,101):
-    output = output+str(FizzBuzz(i))
-
-print(output)
+    print(FizzBuzz(i),end="")
